@@ -8,7 +8,7 @@ jobs:
   lsif-go:
     if: github.repository == 'sourcegraph/deploy-sourcegraph'
     runs-on: ubuntu-latest
-    container: sourcegraph/lsif-go
+    container: sourcegraph/scip-go
     steps:
       - uses: actions/checkout@50fbc622fc4ef5163becd7fab6573eac35f8462e # renovate: tag=v1
       - name: Generate LSIF data
